@@ -32,12 +32,23 @@
    1. 바이너리 다운로드
    2. 환경변수 등록
 2. cmd를 열어 firebase cli 실행, 로그인
-   ```bash
-   $ firebase login
-   ```
+    ```bash
+      $ firebase login
+    ```
 3. firebase console 접속, 플러터 프로젝트 생성
 4. 프로젝트 생성 후 나와있는 명령어 절차 수행
     ```bash
-    $ dart pub global activate flutterfire_cli
-    $ flutterfire configure --project=kpc-shopping
+      $ dart pub global activate flutterfire_cli
+      $ flutterfire configure --project=kpc-shopping
     ```
+5. 코드 추가, 패키지 설치
+   ```dart
+    import 'package:firebase_core/firebase_core.dart';
+    import 'firebase_options.dart';
+
+    // ...
+
+    await Firebase.initializeApp(
+        options: DefaultFirebaseOptions.currentPlatform,
+    );
+   ```
