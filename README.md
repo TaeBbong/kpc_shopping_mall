@@ -22,9 +22,8 @@
 
 ## 모델
 
-1. user
-2. item
-3. item_cart
+1. item
+2. item_cart
 
 ## 파이어베이스 설치 명령어
 
