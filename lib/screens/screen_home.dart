@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
               return ListTile(
                 leading: Image.network(item.imageUrl),
                 title: Text(item.name),
-                subtitle: Text('\$${item.price}'),
+                subtitle: Text('\₩${item.price}'),
               );
             },
           );
